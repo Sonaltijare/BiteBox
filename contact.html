@@ -6,6 +6,8 @@
     <title>BiteBox-contact</title>
 </head>
 <body>
+    
+    <img src="assets/images/BiteBox Logo.jpeg" width="150">
     <h1>Contact Us</h1>
     <p>
          <a href="index.html">Home</a> |
@@ -13,10 +15,75 @@
       <a href="menu.html">Menu</a> |
        <a href="contact.html">Contact</a> 
     </p>
+
     <h2> Visit Our Website</h2>
     <p>
         <a href="https://www.google.com/" target="_blank"> Vist Google</a>
     </p>
+    <hr>
+    <h2> Customer Registration and Order Form</h2>
+    <form >
+        <h3>Customer Information</h3>
+        <label for="Full  Name"> Full Name:</label> <br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="email"> Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="Password"> Password:</label><br>
+        <input type="password" id="Password" name="Password" required> <br><br>
+
+         <label for="Phone"> Phone Number:</label><br>
+        <input type="tel" id="Phone" name="phone" required> <br><br>
+
+        <h3>Order Information</h3>
+        <label for="quantity">Quantity</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required> <br><br>
+
+        <label for="delivery date">Preffered Delivery Date</label><br>
+        <input type="date" id="delivery date" name="delivery date" required>
+
+        <label for="food"> Select Food Item</label> <br>
+        <select name="food" id="food">
+            <option >Veg Pizza</option>
+            <option >Cheese Burger</option>
+            <option >White Sause Pasta</option>
+            <option >French Friesr</option>
+            <option >Sandwich</option>
+            <option >Chocolate Brownie</option>
+            <option >Ice cream</option>
+        </select>
+        <br><br>
+        <h3> Payment Method</h3>
+        <input type="radio" id="cash" name="payment"  >
+        <label for="cash">Cash</label><br>
+
+         <input type="radio" id="Card" name="payment" >
+        <label for="Card">Card</label> <br>
+        
+         <input type="radio" id="upi" name="payment" >
+        <label for="upi">UPI</label> <br><br>
+
+        <h3>Extras</h3>
+        <input type="checkbox" id="cheese" name="extras">
+        <label for="cheese"> Extra Cheese</label><br><br>
+
+        <input type="checkbox" id="dessert" name="extras">
+        <label for="dessert">Dessert </label><br><br>
+       
+        <input type="checkbox" id="cold drink" name="extras">
+        <label for="cold drink">Cold Drink </label><br><br>
+
+        <textarea name="address" id="address" rows="5" cols="40"></textarea> <br><br>
+
+        <input type="submit" value="Place Order">
+
+         <input type="reset" value="Clear Form">
+
+        
+
+        
+    </form>
     
 </body>
 </html>
